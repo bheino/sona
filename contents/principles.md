@@ -16,4 +16,10 @@ When thinking about how my home network should be set up, I want to follow certa
 ## Separation of Concerns
 
 ## Fire & Forget
+After the initial setup, I want to spend as little time as possible dealing with the infrastructure. It should just work! A low inherent complexity is necessary for this. Furthermore, automating tasks plays a central role in minimizing maintenance effort even further. This includes things like:
+
+- Operating System updates
+- Service updates
+- Backups
+- Hardware shutdown/startup
 
