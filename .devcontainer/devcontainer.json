@@ -1,0 +1,16 @@
+{
+  "name": "Sona — Jekyll devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.4-trixie",
+
+  "forwardPorts": [
+    4000 // Jekyll default port
+  ], 
+
+  "postCreateCommand": "gem install bundler && bundle config set --local path 'vendor/bundle' && bundle install --jobs=4 --retry=3",
+
+  "runArgs": ["--init"],
+
+  "containerEnv": {
+    "JEKYLL_ENV": "development"
+  }
+}
